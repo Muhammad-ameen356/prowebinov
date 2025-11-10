@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
       <Card className="mx-auto max-w-sm">
         <CardHeader className="text-center">
             <div className="flex justify-center mb-4">
-                <Logo className="h-12 w-12 text-primary" />
+                <Logo />
             </div>
           <CardTitle className="text-2xl">Admin Login</CardTitle>
           <CardDescription>

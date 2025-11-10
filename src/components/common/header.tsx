@@ -39,10 +39,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Logo className="h-6 w-6 text-primary" />
-            <span className="hidden font-bold sm:inline-block">
-              ProwebInov Agency
-            </span>
+            <Logo />
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             {navLinks.map((link) => (
@@ -74,8 +71,7 @@ export function Header() {
               <SheetContent side="left" className="pr-0">
                   <SheetHeader className="p-4">
                     <Link href="/" className="flex items-center space-x-2">
-                      <Logo className="h-6 w-6 text-primary" />
-                      <span className="font-bold">ProwebInov Agency</span>
+                      <Logo />
                     </Link>
                   </SheetHeader>
                 <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
@@ -101,8 +97,7 @@ export function Header() {
           <div className="flex items-center">
              <div className="flex items-center md:hidden">
                 <Link href="/" className="flex items-center space-x-2">
-                    <Logo className="h-6 w-6 text-primary" />
-                    <span className="font-bold">ProwebInov Agency</span>
+                    <Logo />
                 </Link>
             </div>
           </div>

@@ -23,8 +23,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-col items-center md:items-start gap-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Logo className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">ProwebInov Agency</span>
+              <Logo />
             </Link>
             <p className="text-muted-foreground max-w-xs text-center md:text-left">
               Innovative web solutions for your modern business.
