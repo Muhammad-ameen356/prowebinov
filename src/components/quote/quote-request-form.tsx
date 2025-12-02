@@ -4,7 +4,7 @@ import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
 import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
-import { submitQuoteRequest, type QuoteFormState } from '@/app/quote/actions';
+import { submitQuoteRequest, type QuoteFormState } from '@/app/[locale]/quote/actions';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';

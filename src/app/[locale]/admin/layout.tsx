@@ -1,5 +1,4 @@
-
-'use client';
+"use client";
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -29,6 +28,9 @@ export default function AdminLayout({
   const router = useRouter();
   const [isClient, setIsClient] = useState(false);
 
+  const segments = pathname.split("/");
+  const locale = segments[1];
+  const adminRoot = `/${locale}/admin`;
 
   useEffect(() => {
     setIsClient(true);
@@ -36,34 +38,41 @@ export default function AdminLayout({
 
   useEffect(() => {
     if (isClient) {
-      const isAdminLoggedIn = localStorage.getItem('isAdminLoggedIn') === 'true';
-      if (!isAdminLoggedIn && pathname !== '/admin') {
-        router.push('/admin');
+      const isAdminLoggedIn =
+        localStorage.getItem("isAdminLoggedIn") === "true";
+      if (!isAdminLoggedIn && pathname !== adminRoot) {
+        router.push(adminRoot);
       }
     }
   }, [pathname, router, isClient]);
 
-
   const navLinks = [
-    { href: "/admin/dashboard", label: "Dashboard", icon: Home },
-    { href: "/admin/orders", label: "Orders", icon: ShoppingCart, badge: "6" },
-    { href: "/admin/services", label: "Services", icon: Package },
-    { href: "/admin/customers", label: "Customers", icon: Users },
+    { href: `${adminRoot}/dashboard`, label: "Dashboard", icon: Home },
+    {
+      href: `${adminRoot}/orders`,
+      label: "Orders",
+      icon: ShoppingCart,
+      badge: "6",
+    },
+    { href: `${adminRoot}/services`, label: "Services", icon: Package },
+    { href: `${adminRoot}/customers`, label: "Customers", icon: Users },
     { href: "#", label: "Analytics", icon: LineChart },
   ];
 
   const handleLogout = () => {
-    localStorage.removeItem('isAdminLoggedIn');
-    router.push('/admin');
+    localStorage.removeItem("isAdminLoggedIn");
+    router.push(adminRoot);
   };
-  
-  if (pathname === '/admin' || !isClient) {
+
+  if (pathname === adminRoot || !isClient) {
     return <>{children}</>;
   }
-  
-  const isAdminLoggedIn = isClient ? localStorage.getItem('isAdminLoggedIn') === 'true' : false;
+
+  const isAdminLoggedIn = isClient
+    ? localStorage.getItem("isAdminLoggedIn") === "true"
+    : false;
   if (!isAdminLoggedIn) {
-      return null;
+    return null;
   }
 
   const NavContent = () => (
@@ -110,9 +119,13 @@ export default function AdminLayout({
             <NavContent />
           </div>
           <div className="mt-auto p-4">
-             <Button variant="outline" className="w-full justify-start gap-3" onClick={handleLogout}>
-                <LogOut className="h-4 w-4" />
-                Logout
+            <Button
+              variant="outline"
+              className="w-full justify-start gap-3"
+              onClick={handleLogout}
+            >
+              <LogOut className="h-4 w-4" />
+              Logout
             </Button>
           </div>
         </div>
@@ -121,41 +134,47 @@ export default function AdminLayout({
         <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6 md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button
-                variant="outline"
-                size="icon"
-                className="shrink-0"
-              >
+              <Button variant="outline" size="icon" className="shrink-0">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="flex flex-col">
               <div className="flex h-[60px] items-center border-b px-6">
-                 <Link href="/" className="flex items-center gap-2 font-semibold">
-                    <Logo />
-                 </Link>
+                <Link
+                  href="/"
+                  className="flex items-center gap-2 font-semibold"
+                >
+                  <Logo />
+                </Link>
               </div>
               <div className="flex-1 overflow-auto py-2">
                 <NavContent />
               </div>
-               <div className="mt-auto p-4">
-                <Button variant="outline" className="w-full justify-start gap-3" onClick={handleLogout}>
-                    <LogOut className="h-4 w-4" />
-                    Logout
+              <div className="mt-auto p-4">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-3"
+                  onClick={handleLogout}
+                >
+                  <LogOut className="h-4 w-4" />
+                  Logout
                 </Button>
               </div>
             </SheetContent>
           </Sheet>
-           <div className="flex-1 text-center">
-            <Link href="/admin/dashboard" className="text-lg font-semibold">
+          <div className="flex-1 text-center">
+            <Link
+              href={`${adminRoot}/dashboard`}
+              className="text-lg font-semibold"
+            >
               Dashboard
             </Link>
           </div>
-           <Button variant="outline" size="icon" className="h-8 w-8">
-              <Bell className="h-4 w-4" />
-              <span className="sr-only">Toggle notifications</span>
-            </Button>
+          <Button variant="outline" size="icon" className="h-8 w-8">
+            <Bell className="h-4 w-4" />
+            <span className="sr-only">Toggle notifications</span>
+          </Button>
         </header>
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
           {children}

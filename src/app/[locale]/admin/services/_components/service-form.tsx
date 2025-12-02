@@ -5,7 +5,7 @@ import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
 import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
-import { createService, updateService, type ServiceFormState } from '@/app/admin/services/actions';
+import { createService, updateService, type ServiceFormState } from '@/app/[locale]/admin/services/actions';
 import type { Service } from '@/lib/types';
 import * as icons from 'lucide-react';
 
