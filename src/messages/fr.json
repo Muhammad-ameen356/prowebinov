@@ -1,5 +1,90 @@
 {
   "home": {
-    "title": "AMEEN" 
+    "heroTitle": "Solutions Web Innovantes pour Votre Entreprise Moderne",
+    "heroDescription": "Chez ProwebInov Agency, nous créons des sites web et des applications performants et élégants qui stimulent la croissance et offrent des expériences utilisateur exceptionnelles.",
+    "getFreeQuote": "Obtenir un devis gratuit",
+    "ourWork": "Nos réalisations",
+    "features": {
+      "technology": {
+        "title": "Technologie de pointe",
+        "description": "Nous utilisons les frameworks et technologies les plus récents pour créer des applications web rapides, évolutives et sécurisées."
+      },
+      "customer": {
+        "title": "Approche centrée sur le client",
+        "description": "Votre réussite est notre priorité. Nous travaillons en étroite collaboration avec vous pour comprendre vos besoins et fournir des solutions sur mesure."
+      },
+      "results": {
+        "title": "Résultats prouvés",
+        "description": "Notre portfolio parle de lui-même. Nous avons aidé de nombreuses entreprises à développer leur présence en ligne."
+      }
+    },
+    "services": {
+      "title": "Nos services",
+      "description": "Nous proposons une large gamme de services pour aider votre entreprise à réussir en ligne. Du développement web au marketing, nous vous accompagnons à chaque étape."
+    },
+    "cta": {
+      "title": "Prêt à démarrer votre projet ?",
+      "description": "Discutons de la manière dont nous pouvons vous aider à atteindre vos objectifs. Demandez dès aujourd’hui un devis gratuit et sans engagement.",
+      "button": "Demander un devis"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "achievements": "Réalisations",
+    "requestQuote": "Demander un devis",
+    "customerLogin": "Connexion client",
+    "toggleMenu": "Ouvrir le menu",
+    "toggleLanguage": "Changer de langue",
+    "cart": "Panier",
+    "language": {
+      "en": "Anglais",
+      "fr": "Français",
+      "ar": "Arabe"
+    }
+  },
+  "footer": {
+    "description": "Solutions web innovantes pour votre entreprise moderne.",
+    "navigation": "Navigation",
+    "followUs": "Suivez-nous",
+    "navLinks": {
+      "home": "Accueil",
+      "services": "Services",
+      "achievements": "Réalisations",
+      "requestQuote": "Demander un devis"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "© {year} ProwebInov Agency. Tous droits réservés."
+  },
+  "quote": {
+    "title": "Demander un devis",
+    "description": "Parlez-nous de votre projet, et nous vous répondrons avec un devis personnalisé.",
+    "quoteForm": {
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone (Optionnel)",
+      "message": "Détails du projet",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "jean.dupont@example.com",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "messagePlaceholder": "Parlez-nous de votre projet, vos objectifs et votre budget.",
+      "submit": "Envoyer la demande",
+      "toast": {
+        "success": "Succès",
+        "error": "Erreur"
+      }
+    }
+  },
+  "servicesPage": {
+    "title": "Nos services",
+    "description": "Nous offrons une large gamme de services pour aider votre entreprise à réussir en ligne. Du développement web au marketing, nous avons tout ce qu'il vous faut."
+  },
+  "achievementsPage": {
+    "title": "Nos réalisations",
+    "description": "Nous sommes fiers du travail que nous avons accompli. Voici quelques-uns de nos projets réussis qui démontrent notre expertise et notre engagement envers la qualité."
   }
 }
