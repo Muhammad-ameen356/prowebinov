@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
 
     const lineItems = cart.map((item: any) => ({
       price_data: {
-        currency: "usd",
+        currency: "eur",
         product_data: {
           name: item.title,
         },
