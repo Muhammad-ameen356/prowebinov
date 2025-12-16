@@ -6,6 +6,7 @@ import { Menu, ShoppingCart, User, Globe } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import type { RootState } from "@/lib/redux/store";
+import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -25,14 +26,8 @@ import { Logo } from "@/components/icons";
 import { CartSheet } from "@/components/cart/cart-sheet";
 import { Badge } from "../ui/badge";
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/achievements", label: "Achievements" },
-  { href: "/quote", label: "Request a Quote" },
-];
-
 export function Header() {
+  const t = useTranslations("nav");
   const pathname = usePathname();
   const router = useRouter();
   const cart = useSelector((state: RootState) => state.cart.items);
@@ -46,14 +41,16 @@ export function Header() {
 
   function switchLocale(newLocale: string) {
     const segments = pathname.split("/");
-
-    // Replace locale segment
     segments[1] = newLocale;
-
-    const newPath = segments.join("/");
-
-    router.push(newPath);
+    router.push(segments.join("/"));
   }
+
+  const navLinks = [
+    { href: "/", label: t("home") },
+    { href: "/services", label: t("services") },
+    { href: "/achievements", label: t("achievements") },
+    { href: "/quote", label: t("requestQuote") },
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -62,6 +59,7 @@ export function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo />
           </Link>
+
           <nav className="flex items-center space-x-6 text-sm font-medium">
             {navLinks.map((link) => (
               <Link
@@ -80,21 +78,24 @@ export function Header() {
           </nav>
         </div>
 
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div className="flex flex-1 items-center justify-between md:justify-end">
+          {/* Mobile Menu */}
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle Menu</span>
+                  <span className="sr-only">{t("toggleMenu")}</span>
                 </Button>
               </SheetTrigger>
+
               <SheetContent side="left" className="pr-0">
                 <SheetHeader className="p-4">
                   <Link href="/" className="flex items-center space-x-2">
                     <Logo />
                   </Link>
                 </SheetHeader>
+
                 <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
                   <div className="flex flex-col space-y-3">
                     {navLinks.map((link) => (
@@ -111,16 +112,12 @@ export function Header() {
                         {link.label}
                       </Link>
                     ))}
+
                     <Link
                       href="/dashboard/login"
-                      className={cn(
-                        "transition-colors hover:text-foreground/80",
-                        pathname === "/dashboard/login"
-                          ? "text-foreground"
-                          : "text-foreground/60"
-                      )}
+                      className="text-foreground/60 hover:text-foreground/80"
                     >
-                      Customer Login
+                      {t("customerLogin")}
                     </Link>
                   </div>
                 </div>
@@ -128,46 +125,41 @@ export function Header() {
             </Sheet>
           </div>
 
-          <div className="flex items-center">
-            <div className="flex items-center md:hidden">
-              <Link href="/" className="flex items-center space-x-2">
-                <Logo />
-              </Link>
-            </div>
-          </div>
-
+          {/* Right Actions */}
           <nav className="flex items-center">
+            {/* Language Switch */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Globe className="h-5 w-5" />
-                  <span className="sr-only">Toggle language</span>
+                  <span className="sr-only">{t("toggleLanguage")}</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuItem onClick={() => switchLocale("en")}>
-                  English
+                  {t("language.en")}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => switchLocale("fr")}>
-                  French
+                  {t("language.fr")}
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => switchLocale("ar")}>
+                  {t("language.ar")}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
+            {/* Cart */}
             <Sheet open={isCartOpen} onOpenChange={setIsCartOpen}>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
                   size="icon"
-                  aria-label="Shopping Cart"
+                  aria-label={t("cart")}
                   className="relative"
                 >
                   <ShoppingCart className="h-5 w-5" />
                   {cart.length > 0 && (
-                    <Badge
-                      variant="destructive"
-                      className="absolute -top-1 -right-1 h-4 w-4 justify-center rounded-full p-0 text-xs"
-                    >
+                    <Badge className="absolute -top-1 -right-1 h-4 w-4 rounded-full p-0 text-xs">
                       {cart.length}
                     </Badge>
                   )}
@@ -178,11 +170,12 @@ export function Header() {
               </SheetContent>
             </Sheet>
 
+            {/* Login */}
             <Button
               asChild
               variant="ghost"
               size="icon"
-              aria-label="Customer Login"
+              aria-label={t("customerLogin")}
               className="hidden md:inline-flex"
             >
               <Link href="/dashboard/login">
