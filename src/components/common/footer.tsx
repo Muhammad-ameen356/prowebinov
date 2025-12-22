@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
 import { Logo } from "@/components/icons";
 import { Button } from "@/components/ui/button";
@@ -20,10 +21,24 @@ export function Footer() {
     { href: "#", icon: Linkedin, label: t("social.linkedin") },
   ];
 
+  const paymentMethods = [
+    { src: "/payments/visa.png", alt: "Visa" },
+    { src: "/payments/mastercard.jpg", alt: "MasterCard" },
+    { src: "/payments/klarna.jpg", alt: "Klarna" },
+    { src: "/payments/stripe.png", alt: "Stripe" },
+  ];
+
   return (
     <footer className="border-t bg-secondary/50">
+      {/* 🔔 Payment Banner */}
+      <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-medium">
+        {t("paymentBanner")}
+      </div>
+
       <div className="container py-8">
+        {/* Main Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          {/* Logo */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <Link href="/" className="flex items-center space-x-2">
               <Logo />
@@ -33,6 +48,7 @@ export function Footer() {
             </p>
           </div>
 
+          {/* Navigation */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <h3 className="font-semibold tracking-wider uppercase">
               {t("navigation")}
@@ -50,6 +66,7 @@ export function Footer() {
             </nav>
           </div>
 
+          {/* Social */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <h3 className="font-semibold tracking-wider uppercase">
               {t("followUs")}
@@ -74,6 +91,32 @@ export function Footer() {
           </div>
         </div>
 
+        {/* 💳 Payment Methods (Images) */}
+        <div className="mt-8 border-t pt-6">
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-sm font-medium text-muted-foreground">
+              {t("paymentBanner")}
+            </p>
+
+            <div className="flex flex-wrap items-center justify-center gap-6">
+              {paymentMethods.map((method) => (
+                <div
+                  key={method.alt}
+                  className="relative h-8 w-16 md:h-10 md:w-20 opacity-80 hover:opacity-100 transition"
+                >
+                  <Image
+                    src={method.src}
+                    alt={method.alt}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
           {t("copyright", { year: new Date().getFullYear() })}
         </div>

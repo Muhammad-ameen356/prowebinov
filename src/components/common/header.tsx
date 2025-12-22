@@ -31,6 +31,7 @@ export function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const cart = useSelector((state: RootState) => state.cart.items);
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
@@ -54,7 +55,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container relative flex h-16 items-center">
+        {/* ================= Desktop Logo + Nav ================= */}
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo />
@@ -78,8 +80,16 @@ export function Header() {
           </nav>
         </div>
 
+        {/* ================= Mobile Center Logo ================= */}
+        <div className="absolute left-1/2 -translate-x-1/2 md:hidden">
+          <Link href="/" className="flex items-center">
+            <Logo />
+          </Link>
+        </div>
+
+        {/* ================= Right Actions ================= */}
         <div className="flex flex-1 items-center justify-between md:justify-end">
-          {/* Mobile Menu */}
+          {/* -------- Mobile Menu Button -------- */}
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
@@ -125,7 +135,7 @@ export function Header() {
             </Sheet>
           </div>
 
-          {/* Right Actions */}
+          {/* -------- Right Icons -------- */}
           <nav className="flex items-center">
             {/* Language Switch */}
             <DropdownMenu>
@@ -170,7 +180,7 @@ export function Header() {
               </SheetContent>
             </Sheet>
 
-            {/* Login */}
+            {/* Login (Desktop Only) */}
             <Button
               asChild
               variant="ghost"

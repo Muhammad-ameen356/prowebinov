@@ -58,6 +58,14 @@
       "twitter": "تويتر",
       "linkedin": "لينكدإن"
     },
+    "paymentBanner": "خيارات دفع متعددة متاحة",
+    "payments": {
+      "visa": "فيزا",
+      "mastercard": "ماستركارد",
+      "stripe": "Stripe",
+      "bank": "التحويل البنكي",
+      "jazzcash": "JazzCash / EasyPaisa"
+    },
     "copyright": "© {year} وكالة ProwebInov. جميع الحقوق محفوظة."
   },
   "quote": {
@@ -86,5 +94,170 @@
   "achievementsPage": {
     "title": "إنجازاتنا",
     "description": "نفخر بالعمل الذي قمنا به. إليك بعض مشاريعنا الناجحة التي تعرض خبرتنا والتزامنا بالجودة."
+  },
+
+  "services": {
+    "startWebsite": {
+      "title": "موقع انطلاق",
+      "description": "موقع حديث ومتوافق مع الجوال مبني باستخدام HTML و JavaScript. مثالي للشركات الصغيرة.",
+      "features": {
+        "design": "تصميم متجاوب مسبق",
+        "pages": "صفحتان للمحتوى",
+        "contact": "نموذج الاتصال",
+        "legal": "صفحة إشعارات قانونية",
+        "hosting": "استضافة مجانية (.web.app)",
+        "speed": "محسّن للأداء والأجهزة",
+        "domain": "نطاق مخصص اختياري — 10€/شهر",
+        "updates": "تحديثات تتم إدارتها بواسطة فريقنا (بدون لوحة تحكم للعميل)",
+        "payment": "دفع لمرة واحدة — بدون اشتراك"
+      }
+    },
+    "showcaseWebsite": {
+      "title": "موقع عرض",
+      "description": "موقع ثابت محسّن لمحركات البحث للشركات الناشئة أو العلامات التجارية مع واجهة احترافية.",
+      "features": {
+        "design": "تصميم واجهة مخصص",
+        "pages": "3 صفحات محتوى",
+        "contact": "نموذج الاتصال",
+        "legal": "صفحة إشعارات قانونية",
+        "performance": "سريع ومتجاوب",
+        "hosting": "استضافة اختيارية متاحة من 15€/شهر"
+      }
+    },
+    "dynamicWebsite": {
+      "title": "موقع / مدونة ديناميكي",
+      "description": "موقع ديناميكي كامل مع لوحة تحكم باستخدام React و Node.js.",
+      "features": {
+        "stack": "واجهة React + خادم Node.js",
+        "pages": "4 صفحات (3 محتوى + 1 اتصال)",
+        "admin": "لوحة تحكم لتحديث المحتوى",
+        "api": "هيكلية قائمة على API",
+        "security": "قابل للتوسع وآمن",
+        "hosting": "الاستضافة غير متوفرة"
+      }
+    },
+    "advancedWebapp": {
+      "title": "موقع / تطبيق ويب متقدم",
+      "description": "تطبيقات ويب مخصصة باستخدام React و Next.js و Node.js لاحتياجات أعمال معقدة.",
+      "features": {
+        "stack": "إعداد كامل JS (React + Node/Express)",
+        "design": "تصميم مخصص ولوحة تحكم",
+        "api": "APIs قابلة للتوسع",
+        "systems": "تجارة إلكترونية / حجز / مجتمع / عقارات أو كتالوج المنتجات",
+        "performance": "هندسة أداء عالي",
+        "deployment": "دعم النشر"
+      }
+    },
+    "reactEcommerce": {
+      "title": "موقع تجارة إلكترونية React",
+      "description": "منصة MERN للتجارة الإلكترونية عالية الأداء مع دفع آمن ولوحة تحكم.",
+      "features": {
+        "stack": "MERN stack (MongoDB, Express, React, Node)",
+        "design": "تصميم تجارة إلكترونية مخصص",
+        "pages": "3 صفحات محتوى + صفحة اتصال واحدة",
+        "products": "20 منتجًا",
+        "payment": "تكامل دفع آمن",
+        "management": "إدارة الطلبات والمنتجات",
+        "admin": "لوحة تحكم",
+        "hosting": "استضافة اختيارية من 15€/شهر"
+      }
+    },
+    "starterApp": {
+      "title": "تطبيق موبايل للمبتدئين",
+      "description": "تطبيق بسيط وسريع لنظام Android باستخدام React Native أو Flutter.",
+      "features": {
+        "screens": "حتى 3 شاشات",
+        "navigation": "تنقل أساسي",
+        "android": "نسخة Android مدمجة",
+        "framework": "React Native + Expo",
+        "ios": "نسخة iOS اختيارية"
+      }
+    },
+    "standardApp": {
+      "title": "تطبيق موبايل قياسي",
+      "description": "تطبيق محترف مع المصادقة وتكامل API.",
+      "features": {
+        "ui": "واجهة مستخدم/تجربة مستخدم مخصصة",
+        "screens": "حتى 6 شاشات",
+        "api": "تكامل API",
+        "auth": "مصادقة (Email / Google)",
+        "platforms": "نسخ Android + iOS"
+      }
+    },
+    "advancedApp": {
+      "title": "تطبيق موبايل متقدم",
+      "description": "تطبيق موبايل full-stack قابل للتوسع مع backend مخصص ولوحة تحكم.",
+      "features": {
+        "stack": "Full stack (React Native + Node.js backend)",
+        "screens": "حتى 10 شاشات",
+        "auth": "مصادقة متقدمة (Email, Google, Facebook إلخ)",
+        "push": "إشعارات push",
+        "storage": "رفع ملفات وتخزين بيانات",
+        "admin": "لوحة تحكم (ويب)",
+        "platforms": "نسخ Android & iOS"
+      }
+    },
+    "enterpriseApp": {
+      "title": "تطبيق مؤسسة / SaaS",
+      "description": "حل SaaS أو تطبيق مؤسسة مع ميزات cloud و real-time.",
+      "features": {
+        "design": "تصميم متعدد المنصات مخصص",
+        "realtime": "دردشة وإشعارات في الوقت الفعلي",
+        "cloud": "تكامل السحابة (AWS, Firebase, GCP)",
+        "admin": "لوحة تحكم",
+        "cicd": "CI/CD ونشر",
+        "security": "أمان على مستوى المؤسسة"
+      }
+    },
+    "ecommerceMobileApp": {
+      "title": "تطبيق موبايل للتجارة الإلكترونية",
+      "description": "تطبيق تسوق كامل مع دفع آمن وتحليلات لوحة التحكم.",
+      "features": {
+        "stack": "React Native + Node.js/MongoDB أو Java/SQL",
+        "ui": "UI/UX حديثة للتجارة الإلكترونية",
+        "payment": "بوابات دفع آمنة",
+        "catalog": "كتالوج المنتجات، سلة & الدفع",
+        "orders": "إدارة الطلبات",
+        "push": "إشعارات push",
+        "platforms": "نسخ Android & iOS جاهزة للمتاجر"
+      }
+    },
+    "appPublishing": {
+      "title": "بناء ونشر التطبيق",
+      "description": "نشر التطبيقات على Play Store و App Store وإدارة الامتثال بشكل كامل.",
+      "features": {
+        "build": "تحضير النسخة النهائية لنظامي Android و iOS",
+        "signing": "إعداد التوقيع، الإصدار والموارد (أيقونات، شاشات تحميل)",
+        "accounts": "إنشاء / إعداد حسابات Google Play و Apple Developer",
+        "listing": "إعداد الصفحة (الوصف، الصور، سياسة الخصوصية)",
+        "submission": "النشر على المتاجر Android & iOS",
+        "approval": "إدارة الموافقات وإعادة التقديم"
+      }
+    }
+  },
+
+  "projects": {
+    "innovatex": {
+      "title": "منصة E-Commerce لشركة InnovateX",
+      "description": "حل تجارة إلكترونية كامل يزيد المبيعات بنسبة 40%."
+    },
+    "connectsphere": {
+      "title": "تطبيق موبايل لشركة ConnectSphere",
+      "description": "تطبيق موبايل متعدد المنصات لتحسين التفاعل."
+    },
+    "datadriven": {
+      "title": "لوحة BI لشركة DataDriven Inc.",
+      "description": "لوحة ذكاء أعمال قوية وتحليل بيانات في الوقت الفعلي."
+    },
+    "prestige": {
+      "title": "إعادة تصميم هوية شركة Prestige Corp",
+      "description": "مشروع إعادة تصميم كامل يشمل الموقع، الشعار ومواد التسويق."
+    }
+  },
+
+  "cart": {
+    "addToCart": "أضف إلى السلة",
+    "addedTitle": "تمت إضافة الخدمة",
+    "addedDescription": "تمت إضافة {service} إلى سلتك."
   }
 }
