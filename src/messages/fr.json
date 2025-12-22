@@ -58,8 +58,16 @@
       "twitter": "Twitter",
       "linkedin": "LinkedIn"
     },
+    "paymentBanner": "Plusieurs options de paiement disponibles",
+    "payments": {
+      "visa": "Visa",
+      "mastercard": "MasterCard",
+      "stripe": "Stripe",
+      "bank": "Virement bancaire",
+      "jazzcash": "JazzCash / EasyPaisa"
+    },
     "copyright": "© {year} ProwebInov Agency. Tous droits réservés."
-  },
+  } ,
   "quote": {
     "title": "Demander un devis",
     "description": "Parlez-nous de votre projet, et nous vous répondrons avec un devis personnalisé.",
@@ -86,5 +94,170 @@
   "achievementsPage": {
     "title": "Nos réalisations",
     "description": "Nous sommes fiers du travail que nous avons accompli. Voici quelques-uns de nos projets réussis qui démontrent notre expertise et notre engagement envers la qualité."
+  },
+
+  "services": {
+    "startWebsite": {
+      "title": "Site Web de Démarrage",
+      "description": "Un site web moderne et mobile-friendly construit avec HTML et JavaScript. Idéal pour les petites entreprises.",
+      "features": {
+        "design": "Design réactif prédéfini",
+        "pages": "2 pages de contenu",
+        "contact": "Formulaire de contact",
+        "legal": "1 page Mentions légales",
+        "hosting": "Hébergement gratuit (.web.app)",
+        "speed": "Optimisé pour la vitesse et les appareils",
+        "domain": "Domaine personnalisé optionnel — 10€/mois",
+        "updates": "Mises à jour gérées par nous (pas de panneau client)",
+        "payment": "Paiement unique — pas d'abonnement"
+      }
+    },
+    "showcaseWebsite": {
+      "title": "Site Web de Présentation",
+      "description": "Site web statique optimisé SEO pour startups ou marques personnelles avec une présence professionnelle.",
+      "features": {
+        "design": "Design UI personnalisé",
+        "pages": "3 pages de contenu",
+        "contact": "Formulaire de contact",
+        "legal": "1 page Mentions légales",
+        "performance": "Rapide et responsive",
+        "hosting": "Hébergement optionnel disponible à partir de 15€/mois"
+      }
+    },
+    "dynamicWebsite": {
+      "title": "Site Web / Blog Dynamique",
+      "description": "Site web full-stack dynamique avec panneau d'administration utilisant React & Node.js.",
+      "features": {
+        "stack": "Frontend React + Backend Node.js",
+        "pages": "4 pages (3 contenu + 1 contact)",
+        "admin": "Panneau admin pour mise à jour du contenu",
+        "api": "Architecture orientée API",
+        "security": "Scalable & sécurisé",
+        "hosting": "Hébergement non inclus"
+      }
+    },
+    "advancedWebapp": {
+      "title": "Site / Application Web Avancée",
+      "description": "Applications web personnalisées avec React, Next.js et Node.js pour des besoins complexes.",
+      "features": {
+        "stack": "Setup full-stack JS (React + Node/Express)",
+        "design": "Design et panneau admin personnalisés",
+        "api": "APIs backend évolutives",
+        "systems": "E-commerce / Réservation / Communauté / Immobilier ou catalogue produit",
+        "performance": "Architecture haute performance",
+        "deployment": "Support au déploiement"
+      }
+    },
+    "reactEcommerce": {
+      "title": "Site E-Commerce React",
+      "description": "Plateforme e-commerce MERN performante avec paiements sécurisés et tableau de bord admin.",
+      "features": {
+        "stack": "MERN stack (MongoDB, Express, React, Node)",
+        "design": "Design e-commerce personnalisé",
+        "pages": "3 pages de contenu + 1 page contact",
+        "products": "20 produits listés",
+        "payment": "Intégration paiement sécurisé",
+        "management": "Gestion des commandes et produits",
+        "admin": "Tableau de bord admin",
+        "hosting": "Hébergement optionnel à partir de 15€/mois"
+      }
+    },
+    "starterApp": {
+      "title": "Application Mobile de Démarrage",
+      "description": "Application mobile simple et rapide pour Android utilisant React Native ou Flutter.",
+      "features": {
+        "screens": "Jusqu'à 3 écrans",
+        "navigation": "Navigation basique",
+        "android": "Build Android inclus",
+        "framework": "Framework basé sur React Native + Expo",
+        "ios": "Build iOS optionnel"
+      }
+    },
+    "standardApp": {
+      "title": "Application Mobile Standard",
+      "description": "Application mobile professionnelle avec authentification et intégration API.",
+      "features": {
+        "ui": "UI/UX personnalisée",
+        "screens": "Jusqu'à 6 écrans",
+        "api": "Intégration API",
+        "auth": "Authentification (Email / Google login)",
+        "platforms": "Build Android + iOS"
+      }
+    },
+    "advancedApp": {
+      "title": "Application Mobile Avancée",
+      "description": "Application mobile full-stack évolutive avec backend personnalisé et panneau admin.",
+      "features": {
+        "stack": "Full stack (React Native + Node.js backend)",
+        "screens": "Jusqu'à 10 écrans",
+        "auth": "Authentification avancée (Email, Google, Facebook etc.)",
+        "push": "Notifications push",
+        "storage": "Upload de fichiers & stockage de données",
+        "admin": "Panneau admin (web)",
+        "platforms": "Build Android & iOS"
+      }
+    },
+    "enterpriseApp": {
+      "title": "Application Entreprise / SaaS",
+      "description": "Solution mobile SaaS ou entreprise avec fonctionnalités cloud et temps réel.",
+      "features": {
+        "design": "Design cross-platform personnalisé",
+        "realtime": "Chat en temps réel & notifications",
+        "cloud": "Intégration cloud (AWS, Firebase, GCP)",
+        "admin": "Tableau de bord admin",
+        "cicd": "CI/CD & déploiement",
+        "security": "Sécurité niveau entreprise"
+      }
+    },
+    "ecommerceMobileApp": {
+      "title": "Application Mobile E-Commerce",
+      "description": "Application mobile complète pour le shopping avec paiement sécurisé et analytics admin.",
+      "features": {
+        "stack": "React Native + Node.js/MongoDB ou Java/SQL",
+        "ui": "UI/UX e-commerce moderne",
+        "payment": "Passerelles de paiement sécurisées",
+        "catalog": "Catalogue produits, panier & checkout",
+        "orders": "Gestion des commandes",
+        "push": "Notifications push",
+        "platforms": "Build Android & iOS prêts pour stores"
+      }
+    },
+    "appPublishing": {
+      "title": "Build & Publication App",
+      "description": "Publication Play Store & App Store et gestion conformité de bout en bout.",
+      "features": {
+        "build": "Préparation du build final pour Android et iOS",
+        "signing": "Configuration de signature, versioning et assets (icônes, splash screens)",
+        "accounts": "Création/configuration Google Play Console et Apple Developer Account",
+        "listing": "Configuration de listing (description, screenshots, politique de confidentialité)",
+        "submission": "Soumission aux stores Android & iOS",
+        "approval": "Gestion des approbations et re-soumissions"
+      }
+    }
+  },
+
+  "projects": {
+    "innovatex": {
+      "title": "Plateforme E-Commerce pour InnovateX",
+      "description": "Solution e-commerce complète augmentant les ventes de 40%."
+    },
+    "connectsphere": {
+      "title": "Application Mobile pour ConnectSphere",
+      "description": "Application mobile cross-platform améliorant l'engagement."
+    },
+    "datadriven": {
+      "title": "Tableau de Bord BI pour DataDriven Inc.",
+      "description": "Tableau de bord business intelligence puissant en temps réel."
+    },
+    "prestige": {
+      "title": "Rebranding pour Prestige Corp",
+      "description": "Rebranding complet incluant site web, logo et supports marketing."
+    }
+  },
+
+  "cart": {
+    "addToCart": "Ajouter au panier",
+    "addedTitle": "Service ajouté",
+    "addedDescription": "{service} a été ajouté à votre panier."
   }
 }
