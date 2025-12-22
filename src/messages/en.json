@@ -91,8 +91,174 @@
     "title": "Our Services",
     "description": "We offer a wide range of services to help your business succeed online. From web development to marketing, we have you covered."
   },
+
   "achievementsPage": {
     "title": "Our Achievements",
     "description": "We are proud of the work we've done. Here are some of our successful projects that showcase our expertise and commitment to quality."
+  },
+
+  "services": {
+    "startWebsite": {
+      "title": "Start Website",
+      "description": "A modern, mobile-friendly starter website built with HTML & JavaScript. Ideal for small businesses.",
+      "features": {
+        "design": "Predefined responsive design",
+        "pages": "2 content pages",
+        "contact": "Contact form",
+        "legal": "1 Legal notice page",
+        "hosting": "Free hosting (.web.app subdomain)",
+        "speed": "Speed & device optimized",
+        "domain": "Optional custom domain — 10€/month",
+        "updates": "Updates managed by us (no client panel)",
+        "payment": "One-time payment — no subscription"
+      }
+    },
+    "showcaseWebsite": {
+      "title": "Showcase Website",
+      "description": "SEO-optimized static website for startups or personal brands with a clean professional presence.",
+      "features": {
+        "design": "Custom UI design",
+        "pages": "3 content pages",
+        "contact": "Contact form",
+        "legal": "1 Legal notice page",
+        "performance": "Fast loading & responsive",
+        "hosting": "Optional hosting available from 15€/month"
+      }
+    },
+    "dynamicWebsite": {
+      "title": "Dynamic Website / Blog",
+      "description": "Full-stack dynamic website with admin panel using React & Node.js.",
+      "features": {
+        "stack": "React frontend + Node.js backend",
+        "pages": "4 pages (3 content + 1 contact)",
+        "admin": "Admin panel for content updates",
+        "api": "API-driven architecture",
+        "security": "Scalable & secure",
+        "hosting": "Hosting not included"
+      }
+    },
+    "advancedWebapp": {
+      "title": "Advanced Website / Web App",
+      "description": "Custom web applications built with React, Next.js, and Node.js for complex business needs.",
+      "features": {
+        "stack": "Full-stack JS setup (React + Node/Express)",
+        "design": "Custom design and admin panel",
+        "api": "Scalable backend APIs",
+        "systems": "E-commerce / Booking / Community / Real estate or product catalog",
+        "performance": "High-performance architecture",
+        "deployment": "Deployment support"
+      }
+    },
+    "reactEcommerce": {
+      "title": "React E-Commerce Website",
+      "description": "High-performance MERN-stack e-commerce platform with secure payments and admin dashboard.",
+      "features": {
+        "stack": "MERN stack (MongoDB, Express, React, Node)",
+        "design": "Custom e-commerce design",
+        "pages": "3 content pages + 1 contact page",
+        "products": "20 product listings",
+        "payment": "Secure payment integration",
+        "management": "Order & product management",
+        "admin": "Admin dashboard",
+        "hosting": "Optional hosting from 15€/month"
+      }
+    },
+    "starterApp": {
+      "title": "Starter Mobile App",
+      "description": "Simple and fast mobile app for Android built using React Native or Flutter.",
+      "features": {
+        "screens": "Up to 3 screens",
+        "navigation": "Basic navigation",
+        "android": "Android build included",
+        "framework": "React Native + Expo based framework",
+        "ios": "Optional iOS build"
+      }
+    },
+    "standardApp": {
+      "title": "Standard Mobile App",
+      "description": "Professionally designed mobile app with authentication and API integration.",
+      "features": {
+        "ui": "Custom UI/UX",
+        "screens": "Up to 6 screens",
+        "api": "API integration",
+        "auth": "Authentication (Email / Google login)",
+        "platforms": "Android + iOS builds"
+      }
+    },
+    "advancedApp": {
+      "title": "Advanced Mobile App",
+      "description": "Scalable full-stack mobile app with custom backend and admin panel.",
+      "features": {
+        "stack": "Full stack (React Native + Node.js backend)",
+        "screens": "Up to 10 screens",
+        "auth": "Advanced authentication (Email, Google, Facebook etc.)",
+        "push": "Push notifications",
+        "storage": "File upload & data storage",
+        "admin": "Admin panel (Web based)",
+        "platforms": "Android & iOS builds"
+      }
+    },
+    "enterpriseApp": {
+      "title": "Enterprise App / SaaS",
+      "description": "Production-grade SaaS or enterprise mobile solution with cloud & real-time features.",
+      "features": {
+        "design": "Custom designed cross platform app",
+        "realtime": "Real-time chat & notifications live updates",
+        "cloud": "Cloud integration (AWS, Firebase, GCP)",
+        "admin": "Admin dashboard",
+        "cicd": "CI/CD & deployment",
+        "security": "Enterprise-level security"
+      }
+    },
+    "ecommerceMobileApp": {
+      "title": "E-Commerce Mobile App",
+      "description": "Complete mobile shopping app with secure checkout and admin analytics.",
+      "features": {
+        "stack": "React Native + Node.js/MongoDB or Java/SQL setup",
+        "ui": "Modern e-commerce UI/UX",
+        "payment": "Secure payment gateways",
+        "catalog": "Product catalog, cart & checkout",
+        "orders": "Order management dashboard",
+        "push": "Push notifications",
+        "platforms": "Android & iOS store-ready builds"
+      }
+    },
+    "appPublishing": {
+      "title": "App Build & Publishing",
+      "description": "End-to-end Play Store & App Store publishing and compliance handling.",
+      "features": {
+        "build": "Final build preparation for Android (Play Store) and iOS (App Store)",
+        "signing": "Configuration of app signing, versioning, and assets (icons, splash screens, etc.)",
+        "accounts": "Creation/setup of your Google Play Console and Apple Developer Account",
+        "listing": "Store listing setup (description, screenshots, privacy policy, etc.)",
+        "submission": "Submission to both stores (Android & iOS)",
+        "approval": "Handling of first approval and re-submission"
+      }
+    }
+  },
+
+  "projects": {
+    "innovatex": {
+      "title": "E-commerce Platform for InnovateX",
+      "description": "A complete e-commerce solution with custom features, boosting their sales by 40%."
+    },
+    "connectsphere": {
+      "title": "Mobile App for ConnectSphere",
+      "description": "A cross-platform mobile application to enhance user engagement and connectivity."
+    },
+    "datadriven": {
+      "title": "BI Dashboard for DataDriven Inc.",
+      "description": "An intuitive and powerful business intelligence dashboard for real-time data analysis."
+    },
+    "prestige": {
+      "title": "Corporate Rebranding for Prestige Corp",
+      "description": "A full rebranding project, including a new website, logo, and marketing materials."
+    }
+  },
+
+  "cart": {
+    "addToCart": "Add to Cart",
+    "addedTitle": "Service Added",
+    "addedDescription": "{service} has been added to your cart."
   }
 }

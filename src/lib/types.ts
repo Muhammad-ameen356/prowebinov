@@ -1,18 +1,18 @@
-import type { LucideIcon } from 'lucide-react';
+import type { LucideIcon } from "lucide-react";
 
 export type Service = {
   id: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
+  featureKeys: string[];
   price: string;
-  icon: keyof typeof import('lucide-react');
-  features: string[];
+  icon: keyof typeof import("lucide-react");
 };
 
 export type Project = {
   id: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   imageUrl: string;
-  imageHint: string;
+  imageHint?: string;
 };
