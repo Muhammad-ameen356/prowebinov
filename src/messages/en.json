@@ -58,6 +58,14 @@
       "twitter": "Twitter",
       "linkedin": "LinkedIn"
     },
+    "paymentBanner": "Multiple payment options available",
+    "payments": {
+      "visa": "Visa",
+      "mastercard": "MasterCard",
+      "stripe": "Stripe",
+      "bank": "Bank Transfer",
+      "jazzcash": "JazzCash / EasyPaisa"
+    },
     "copyright": "© {year} ProwebInov Agency. All rights reserved."
   },
   "quote": {
